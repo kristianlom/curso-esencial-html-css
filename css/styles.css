@@ -35,7 +35,8 @@
 
 body {
   color: var(--gray30);
-  font-family: charter;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: charter;*/
 }
 
 a {
@@ -73,4 +74,28 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+pre {
+  background: #fec62e;
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(230, 200, 100, .3), transparent), url('../images/pattern.png');
+  /*background-repeat: no-repeat;*/
+  /*backgraound-position: left 50px bottom -50px;*/
+  /*background-size: cover;*/
+  height: 350px;
+}
+
+h3::before {
+  content: '-';
+}
+
+h3::after {
+  content: '';
+  width: 32px;
+  height: 4px;
+  background: var(--gray30);
+  display: inline-block;
 }
