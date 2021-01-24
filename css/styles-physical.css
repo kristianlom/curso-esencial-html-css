@@ -126,6 +126,39 @@ blockquote span::before {
   content: '-';
 }
 
+/*Componente Base : Para que el resto del contenido se sienta seguro*/
+
+.main {
+  /*background-image: linear-gradient(to top, rgba(230, 200, 100, .3), transparent), url('../images/pattern.png');*/
+}
+
+/*Wrapper o u-wrapper:Delimitar las fronteras del contenido y centrarlo*/
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+}
+
+/*Contenido: */
+
+.main-content {
+  /*background: blue;*/
+  padding: 20px;
+  background: white;
+}
+
+.title {
+background: red;
+}
+
+.services {
+  background: purple;
+}
+
+.pricing {
+  background: blue;
+}
+
 .debug {
   box-shadow: inset 0 0 0 50px red;
   outline: 1px solid red;
