@@ -33,6 +33,9 @@
   --gray10: #616161;
 }
 
+html {
+scroll-behavior: smooth;
+}
 body {
   color: var(--gray30);
   font-family: 'Roboto', sans-serif;
@@ -47,7 +50,26 @@ a {
 header {
   /* --gray10:red; */
   font-size: 14px;
+  width: 188px;
   color: var(--gray10);
+  position: absolute;
+  /*border: 1px solid red;*/
+  top:64px;
+  /*right: 0;*/
+  /*bottom: 0;*/
+  left: -232px;
+  /*position: relative;*/
+  /*margin:50px;*/
+  /* top left bottom right z-index*/
+  /*top:200px;*/
+  /*left:30px;*/
+  /*right: 50px;*/
+  /*bottom: 100px;*/
+  /*background: red;*/
+  z-index: 1;
+  /*position: absolute;*/
+  /*position: fixed;*/
+  /*position: sticky;*/
 }
 
 header a {
@@ -61,6 +83,11 @@ header a:hover {
 
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
+}
+
+header li {
+  margin-bottom: 16px;
 }
 
 h1 {
@@ -69,6 +96,7 @@ h1 {
   /*font-size: 3.75em;*/
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
   /* margin-left: 10px;
   margin-right: 10px;
   margin: 64px 10px 16px 10px;
@@ -95,6 +123,9 @@ h3 {
   margin-top: 16px;
   margin-bottom: 24px;
   font-weight: normal;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 pre {
@@ -126,7 +157,17 @@ blockquote span::before {
   content: '-';
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
+
 /*Componente Base : Para que el resto del contenido se sienta seguro*/
+
+.header-content{
+  position: relative;
+}
 
 .main {
   /*background-image: linear-gradient(to top, rgba(230, 200, 100, .3), transparent), url('../images/pattern.png');*/
@@ -143,12 +184,12 @@ blockquote span::before {
 
 .main-content {
   /*background: blue;*/
-  padding: 20px;
+  /*padding: 20px;*/
   background: white;
 }
 
 .title {
-background: red;
+  background: red;
 }
 
 .services {
@@ -177,6 +218,7 @@ background: red;
 
 .section-content {
   margin-top: 164px;
+  position: relative;
 }
 
 .section-content:first-of-type {
@@ -206,7 +248,8 @@ background: red;
 .section-content h3 {
   counter-increment: tittleList;
   /*background: red;*/
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+
 }
 
 .section-content h3::before {
@@ -215,8 +258,16 @@ background: red;
 
 .section-content h3::after {
   content: '';
-  width: 32px;
+  width: 80px;
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
+
+/* ::selection {
+  background: green;
+}
+*/
