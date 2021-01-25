@@ -129,6 +129,8 @@ blockquote {
 .section-content img {
   margin-block-start: 40px;
   display: block;
+  max-inline-size: 100%;
+  /*max-width: 100%;*/
 }
 
 .section-content h3 {
@@ -149,4 +151,22 @@ blockquote {
 
 .main hr {
   display: none;
+}
+
+.main {
+  border: 1px solid red;
+}
+
+.wrapper {
+  border: 1px solid yellow;
+  max-inline-size: 902px;
+
+  /*block-size: 100px;*/
+  /*overflow: auto;*/
+  margin: auto;
+  /*width: ;*/
+}
+
+.main-content {
+  border: 1px solid blue;
 }
