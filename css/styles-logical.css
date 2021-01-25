@@ -107,6 +107,19 @@ pre {
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
+  border: 10px solid red;
+  border-left: 5 solid blue;
+  border-inline-start: 5px solid white;
+  border-block-start: 20px solid pink;
+  border-inline-end: 5px solid green;
+  border-block-start-color: blue;
+  border: 10px solid #5551ff;
+  box-shadow: -10px 10px 0 0 #abaaf6;
+  /* margin-block-end: 40px;
+  border-radius: 50%;
+  inline-size: 400px;
+  block-size: 400px; */
+  /*border-start-start-radius: 60px;*/
 }
 
 p {
